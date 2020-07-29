@@ -1,13 +1,12 @@
 import React from "react"
-import {
-  Card,
-  CardTitle,
-  CardSubtitle,
-  CardBody,
-  Badge,
-} from "reactstrap"
-import { Link } from "gatsby"
-import { Slugify } from "../util/slugify"
+// import {
+//   Card,
+//   CardTitle,
+//   CardBody,
+//   Badge,
+// } from "reactstrap"
+// import { Link } from "gatsby"
+// import { Slugify } from "../util/slugify"
 
 import Author from "./author"
 
@@ -15,7 +14,7 @@ const LeftSidebar = ({ data }) => {
   return (
     <div>
       <Author />
-      <Card>
+      {/* <Card>
         <CardBody>
           <CardTitle className="mb-3">Categories</CardTitle>
 
@@ -24,7 +23,7 @@ const LeftSidebar = ({ data }) => {
               <ul className="post-categories" key={index}>
                 {edge.node.frontmatter.categories.map((category, index) => (
                   <li key={index}>
-                    <Link to={`/category/${Slugify(category)}`}>
+                    <Link to={`/categories/${Slugify(category)}`}>
                       <Badge color="light">{category}</Badge>
                     </Link>
                   </li>
@@ -33,7 +32,7 @@ const LeftSidebar = ({ data }) => {
             )
           })}
         </CardBody>
-      </Card>
+      </Card> */}
     </div>
   )
 }

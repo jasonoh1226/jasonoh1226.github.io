@@ -3,8 +3,6 @@ import { Link } from 'gatsby'
 import {Badge, Card, CardTitle, CardText, CardSubtitle, CardBody} from 'reactstrap'
 import Img from 'gatsby-image'
 
-import {Slugify} from '../util/slugify'
-
 const PostGrid = ({title, categories, slug, date, excerpt, image, tags}) => {
 
     return (

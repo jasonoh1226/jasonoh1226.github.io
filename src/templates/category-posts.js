@@ -10,10 +10,10 @@ import RightSidebar from "../components/right-sidebar"
 
 const CategoryPosts = ({ data, pageContext }) => {
   const { category } = pageContext
-  const { totalCount } = data.allMarkdownRemark
-  const pageHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with "${category}"`
+  // const { totalCount } = data.allMarkdownRemark
+  // const pageHeader = `${totalCount} post${
+  //   totalCount === 1 ? "" : "s"
+  // } tagged with "${category}"`
 
   return (
     <Layout>

@@ -11,9 +11,8 @@ import RightSidebar from "../components/right-sidebar"
 const TagPosts = ({data, pageContext}) => {
 
     const {tag} = pageContext
-    const {totalCount} = data.allMarkdownRemark
-    const pageHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
-
+    // const {totalCount} = data.allMarkdownRemark
+    // const pageHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
 
     return (
         <Layout>
@@ -86,6 +85,5 @@ export const tagQuery = graphql`
     }
   }
 `
-
 
 export default TagPosts;

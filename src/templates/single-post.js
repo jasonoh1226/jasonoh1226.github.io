@@ -37,16 +37,13 @@ const SinglePost = ({ data }) => {
                       </li>
                     ))}
                   </ul>
-                </span>
-                
-                
+                </span> 
               </CardSubtitle>
               <CardTitle><h2>{post.title}</h2></CardTitle>
               <CardText>
-              
-                <div
-                  dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-                />
+                <span
+                    dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+                  />
               </CardText>
               <ul className="post-tags">
                   {post.tags.map((tag, index) => (

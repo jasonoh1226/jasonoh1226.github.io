@@ -26,14 +26,11 @@ const TagsPage = ({ pageContext }) => {
                     </Button>
                     </li>
                 ))}
-                </ul>
-                
-            </div>
-            
-            
+              </ul> 
+            </div> 
           </div>
         </section>
-          
+       
         </Col>
         <Col md={{size: 3, order: 1}}>
           <Author />

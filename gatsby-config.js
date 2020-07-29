@@ -13,6 +13,26 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },  
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -26,6 +46,8 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
+   
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -40,7 +62,7 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-catch-links`,
-    `gatsby-transformer-remark`,
+    // `gatsby-transformer-remark`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

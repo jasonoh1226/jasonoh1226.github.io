@@ -169,7 +169,7 @@ exports.createPages = async ({ graphql, actions }) => {
     reporter.panicOnBuild('ERROR: Loading "createPages" query')
   } else {
     //console.log(JSON.stringify(response, undefined, 4))
-    console.log("@@@@@@@@@@", singlePostTemplate)
+    //console.log("@@@@@@@@@@", singlePostTemplate)
 
     const posts = response.data.allMarkdownRemark.edges
 
@@ -207,9 +207,9 @@ exports.createPages = async ({ graphql, actions }) => {
     // Remove duplicates
     tags = _.uniq(tags)
 
-    console.log("@@@@@@@@@@", tagsPageTemplate)
-    console.log(tags)
-    console.log(tagPostCounts)
+    // console.log("@@@@@@@@@@", tagsPageTemplate)
+    // console.log(tags)
+    // console.log(tagPostCounts)
 
     // Create tags page
     createPage({
@@ -255,9 +255,9 @@ exports.createPages = async ({ graphql, actions }) => {
     // Remove duplicates
     categories = _.uniq(categories)
 
-    console.log("@@@@@@@@@@", categoriesPageTemplate)
-    console.log(categories)
-    console.log(categoryPostCounts)
+    // console.log("@@@@@@@@@@", categoriesPageTemplate)
+    // console.log(categories)
+    // console.log(categoryPostCounts)
 
     // Create tags page
     createPage({

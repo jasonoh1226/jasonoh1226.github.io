@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Badge, Button, Row, Col } from "reactstrap"
+import { Badge, Row, Col } from "reactstrap"
 import {Link} from 'gatsby'
 
 import { Slugify } from "../util/slugify"
@@ -27,11 +27,8 @@ const CategoriesPage = ({ pageContext }) => {
                     </Link>
                     </li>
                 ))}
-                </ul>
-                
-            </div>
-            
-            
+              </ul>     
+            </div> 
           </div>
         </section>
           

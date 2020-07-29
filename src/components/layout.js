@@ -34,10 +34,8 @@ const Layout = ({ children }) => {
         crossOrigin="anonymous"
       />
 
-
-      
+      <Header siteTitle={data.site.siteMetadata.title} />
       <div className="container" id="content">
-        <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
       </div>
       <Footer siteAuthor={data.site.siteMetadata.author} />

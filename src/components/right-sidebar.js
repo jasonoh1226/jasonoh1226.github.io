@@ -3,10 +3,6 @@ import {
   Card,
   CardTitle,
   CardBody,
-  Form,
-  FormGroup,
-  Input,
-  Button,
   Row,
   Col
 } from "reactstrap"
@@ -80,10 +76,6 @@ const RightSidebar = () => {
                                 
                             </Link>
                         </div>
-
-                           
-
-
                     )
                 })}
             </div>
@@ -109,7 +101,7 @@ const RightSidebar = () => {
           </Form>
         </CardBody>
       </Card> */}
-      <Card>
+      {/* <Card>
         <CardBody>
           <CardTitle className="text-center text-uppercase">
             Advertisement
@@ -120,7 +112,7 @@ const RightSidebar = () => {
             style={{ width: "100%" }}
           />
         </CardBody>
-      </Card>
+      </Card> */}
       
     </div>
   )
