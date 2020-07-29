@@ -1,0 +1,43 @@
+
+
+.card {
+  margin-bottom: 30px;
+
+  .card-title {
+    margin-top: 10px;
+    color: $menu-title;
+    font-size: 20px;
+  }
+  .card-subtitle {
+    color: $text-light;
+  }
+
+  .card-text {
+    margin-top: 10px;
+  }
+
+}
+
+ul.post-tags {
+  padding: 1rem;
+  display: inline-flex;
+  list-style: none;
+
+  li {
+    margin-right: 10px;
+  }
+}
+
+ul.post-categories {
+  padding: 0.2rem;
+  display: inline-flex;
+  list-style: none;
+  font-size: 20px;
+  
+
+  li {
+    margin-right: 2px;
+  }
+}
+
+

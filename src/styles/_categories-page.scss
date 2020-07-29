@@ -1,0 +1,41 @@
+.categories-grid {
+    background-color: white;
+    display: grid;
+    margin-bottom: 20px;
+
+
+    .categories-grid-container {
+       
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px -2px, rgba(0, 0, 0, 0.14) 0px 3px 4px 0px, rgba(0, 0, 0, 0.12) 0px 1px 8px 0px;
+
+      
+
+        .categories-container {
+            display: inline;
+
+            padding: 0.5rem;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    display: inline;
+                   }
+                   .categories {
+                       margin-right: 10px;
+                   }
+
+            }
+
+          
+    
+           
+
+        }
+
+        
+    }
+}

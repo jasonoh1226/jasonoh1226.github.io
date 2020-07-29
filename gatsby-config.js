@@ -1,10 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Jason Oh`,
+    description: `Share knowledges and ideas`,
+    author: `Jason Oh`,
+    bio: `Full Stack Developer`,
+    github: `https://github.com/jasonoh1226`,
+    linkedin: `https://www.linkedin.com/in/jason-junyoung-oh-6183b429/`,
+    siteUrl: `https://jasonoh1226.github.io/`,
   },
   plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -12,9 +18,7 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    },  
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -24,9 +28,11 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-catch-links`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
