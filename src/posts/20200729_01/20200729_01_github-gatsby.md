@@ -1,37 +1,59 @@
 ---
-title: Test in Folder
+title: Deploy a Gatsby Site on GitHup Pages
 author: Jason Oh
-date: 2020-07-12 11:00:00
+date: 2020-07-29 11:00:00
 featuredImgUrl: https://images.unsplash.com/photo-1560237731-890b122a9b6c
 featuredImgAlt: Mountains with a starry sky
-featuredImage: hero.jpg
+featuredImage: 20200729_01_github-gatsby.png
 categories: 
 - Programming
 - Framework
 tags:
-- code
-- design
+- gatsbyjs
+- github
+- deploy
 ---
 
-My first post using `@narative/gatsby-theme-novela`. Novela is built by the team at [Narative](https://narative.co), and built for everyone that loves the web.
+##### Learn how to configure Gatsby to deploy a blog site on Github pages
 
-## Headers
+&nbsp;
 
-# H1
+Gatsby is a **free** and **open source framework** based on React that helps developers build blazing fast web applications, whche are easy to deploy and serve. Gatsby has risen in popularity over the last years because of its ability to integrate with various data sources through GraphQ and deployment to a variety of hosts.
 
-It is recommended to NOT use H1s as it is reserved for the article heading. Any H1 is set as an H2.
+In this post, we will look at how you can get started with Gatsby, build a static site and deploy it through GitHub pages for free.
 
-## H2
+---
 
-### H3
+### Create a Gatsby project ###
 
-#### H4
+&nbsp;
 
-##### H5
+1. Install Node.js
+```shell
+brew install node
+```
+Or download from [https://nodejs.org](https://nodejs.org/en/)
 
-###### H6
 
-## Emphasis
+2. Install Git
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Download from [https://git-scm.com](https://git-scm.com/downloads)
+
+3. Install Gatsby CLI
+```shell
+npm i -g gatsby-cli
+```
+
+4. Create a Gatsby Site
+```shell
+gatsby new my-gatsby-blog
+```
+```shell
+cd my-gatsby-blog
+gatsby develop
+```
+
 
 Emphasis, aka italics, with _asterisks_ or _underscores_.
 
