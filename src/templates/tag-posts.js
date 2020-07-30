@@ -18,7 +18,7 @@ const TagPosts = ({data, pageContext}) => {
         <Layout>
         <SEO title={`Tags | ${tag}`} />
         <Row>
-          <Col md={{size: 6, order: 6}}>
+          <Col lg={{size: 6, order: 6}}>
           <section>
             {data.allMarkdownRemark.edges.map((edge, index) => {
               return (
@@ -39,10 +39,10 @@ const TagPosts = ({data, pageContext}) => {
             })}
           </section>
           </Col>
-          <Col md={{size: 3, order: 1}}>
+          <Col lg={{size: 3, order: 1}}>
             <LeftSidebar data={data} />
           </Col>
-          <Col md={{size: 3, order: 12}}>
+          <Col lg={{size: 3, order: 12}}>
             <RightSidebar />
           </Col>
         </Row>

@@ -14,7 +14,7 @@ const TagsPage = ({ pageContext }) => {
     <Layout>
       <SEO title="Tags" />
       <Row>
-        <Col md={{size: 6, order: 6}}>
+        <Col lg={{size: 6, order: 6}}>
         <section className="tags-grid"> 
         <div className="tags-grid-container">
             <div className="tags-container">
@@ -32,10 +32,10 @@ const TagsPage = ({ pageContext }) => {
         </section>
        
         </Col>
-        <Col md={{size: 3, order: 1}}>
+        <Col lg={{size: 3, order: 1}}>
           <Author />
         </Col>
-        <Col md={{size: 3, order: 12}}>
+        <Col lg={{size: 3, order: 12}}>
           <RightSidebar />
         </Col>
       </Row>

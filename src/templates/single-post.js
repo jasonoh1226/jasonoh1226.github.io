@@ -15,7 +15,7 @@ const SinglePost = ({ data }) => {
     <Layout>
       <SEO title={post.title} />
       <Row>
-        <Col md="8">
+        <Col lg="8">
           <Card>
             <figure>
               <Img
@@ -57,7 +57,7 @@ const SinglePost = ({ data }) => {
             </CardBody>
           </Card>
         </Col>
-        <Col md="4">
+        <Col lg="4">
           <RightSidebar />
         </Col>
       </Row>

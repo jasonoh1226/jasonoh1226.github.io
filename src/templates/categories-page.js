@@ -15,7 +15,7 @@ const CategoriesPage = ({ pageContext }) => {
     <Layout>
       <SEO title="Categories" />
       <Row>
-        <Col md={{size: 6, order: 6}}>
+        <Col lg={{size: 6, order: 6}}>
         <section className="categories-grid"> 
         <div className="categories-grid-container">
             <div className="categories-container">
@@ -33,10 +33,10 @@ const CategoriesPage = ({ pageContext }) => {
         </section>
           
         </Col>
-        <Col md={{size: 3, order: 1}}>
+        <Col lg={{size: 3, order: 1}}>
           <Author />
         </Col>
-        <Col md={{size: 3, order: 12}}>
+        <Col lg={{size: 3, order: 12}}>
           <RightSidebar />
         </Col>
       </Row>

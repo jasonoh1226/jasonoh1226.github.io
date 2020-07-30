@@ -4,9 +4,7 @@ import {
   CardTitle,
   CardSubtitle,
   CardBody,
-  Form,
-  FormGroup,
-  Input,
+  CardText
 } from "reactstrap"
 import { graphql, useStaticQuery } from "gatsby"
 
@@ -31,7 +29,7 @@ const Author = () => {
     <div>
       <Card>
         <CardBody>
-          <div style={{ margin: "0 auto", width: "50%"}}>
+          <div style={{ margin: "0 auto", width: "30%"}}>
             <ProfileImage className="profile-image" />
           </div>
           <CardTitle className="text-center">
@@ -40,11 +38,9 @@ const Author = () => {
           <CardSubtitle className="text-center">
             {authorQuery.site.siteMetadata.bio}
           </CardSubtitle>
-          <Form className="text-center">
-            <FormGroup>
-              <Input type="email" name="email" placeholder="Email me" />
-            </FormGroup>
-          </Form>
+          <CardText className="text-center">I am a full stack developer with 2 years experience. 
+                    I create websites and applications that are fast, easy to use, and built with best practices.</CardText>
+          
           <div className="author-social-links">
             <ul>
               <li>
