@@ -64,8 +64,10 @@
   }
 
   Img {
-    
+    max-width: 65px;
+    max-height: 65px;
     border-radius: 5px;
+
   }
 
   .recent-posts-date {
@@ -80,23 +82,22 @@
 }
 
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 991px) {
   .recent-posts-container {
 
     Img {
-      max-width: 60px;
-      max-height: 60px;
-
+      max-width: 90px;
+      max-height: 90px;
     }
     .recent-posts-date {
 
-      font-size: 12px;
+      font-size: 14px;
 
     }
   
     .recent-posts-title {
 
-      font-size: 12px;
+      font-size: 16px;
     }
   }
 }

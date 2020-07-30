@@ -141,6 +141,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const tagPostsTemplate = path.resolve("./src/templates/tag-posts.js")
   const categoriesPageTemplate = path.resolve("./src/templates/categories-page.js")
   const categoryPostsTemplate = path.resolve("./src/templates/category-posts.js")
+  const postListTemplate = path.resolve("./src/templates/post-list.js")
 
   // 2. Get markdwon data
   // Query for markdown nodes to use in creating pages.
@@ -186,7 +187,7 @@ exports.createPages = async ({ graphql, actions }) => {
       })
     })
 
-    // 4. Create tags page
+    // 4.1 Create tags page
     // - npm install lodash
 
     // Get all tags
@@ -223,7 +224,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
 
 
-    // 5. Create tag posts page
+    // 4.2 Create tag posts page
     tags.forEach(tag => {
       createPage({
         path: `/tags/${Slugify(tag)}`,
@@ -235,7 +236,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
 
 
-    // 6. Create categories page
+    // 5.1 Create categories page
 
     // Get all categories
     let categories = []
@@ -271,7 +272,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
 
 
-    // 7. Create category posts page
+    // 5.2 Create category posts page
     categories.forEach(category => {
       createPage({
         path: `/categories/${Slugify(category)}`,
@@ -281,6 +282,33 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       })
     })
-    
+
+
+    // 6. Create post lists to implement a pagination 
+    const postsPerPage = 2
+    const numberOfPages = Math.ceil(posts.length / postsPerPage)
+
+    console.log (`gatsby-node ${posts.length}` )
+
+    Array.from({ length: numberOfPages }).forEach((_, index) => {
+      const isFristPage = index === 0
+      const currentPage = index + 1
+
+      // if it is the first page, do not need to create a page because it already exist
+      if (isFristPage) return
+
+      console.log(`@@@@@@@@@ ${postsPerPage} ${currentPage}`)
+      // if it is not the first page, create a page
+      createPage({
+        path: `/page/${currentPage}`,
+        component: postListTemplate,
+        context: {
+          limit: postsPerPage,
+          skip: index * postsPerPage,
+          currentPage,
+          numberOfPages
+        }
+      })
+    })   
   }
 }

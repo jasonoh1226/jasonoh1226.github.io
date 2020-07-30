@@ -23,6 +23,7 @@ Gatsby is a **free** and **open source framework** based on React that helps dev
 In this post, we will look at how you can get started with Gatsby, build a static site and deploy it through GitHub pages for free.
 
 ---
+&nbsp;
 
 ### Create a Gatsby project ###
 
@@ -54,99 +55,55 @@ cd my-gatsby-blog
 gatsby develop
 ```
 
+---
+&nbsp;
 
-Emphasis, aka italics, with _asterisks_ or _underscores_.
+### Set up GitHub Pages ###
 
-Strong emphasis, aka bold, with **asterisks** or **underscores**.
+GitHub pages lets you turn github repositories into elegant websites to showcase your portfolio, your projects, documentations, or anything else you want to share with the world. There are no databases to set up and no servers to configure. If you're already using github, it's the most direct path to create websites for you and your projects.
 
-Combined emphasis with **asterisks and _underscores_**.
+&nbsp;
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+##### **Create a new repository**
 
-## Lists
+GitHub Pages allows each user **one “user site”** (username.github.io) and **unlimited “project sites”** (username.github.io/projectname). Each organization also has one “organization site” and unlimited “project sites”. **User and organization** sites must be deployed from the **master branch** on GitHub Pages, and **project** sites can be deployed from either the **master** branch or a branch called **“gh-pages.”**
 
-1. First ordered list item
-2. Another item
-3. Actual numbers don't matter, just that it's a number
+![new repository](new-repository.png)
 
-- Unordered list can use asterisks
-
-* Or minuses
-
-- Or pluses
-
-## Links
-
-[I'm an inline-style link](https://www.google.com)
-
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-
-[I'm a reference-style link][arbitrary case-insensitive reference text]
-
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
-
-[You can use numbers for reference-style link definitions][1]
-
-Or leave it empty and use the [link text itself].
-
-URLs and URLs in angle brackets will automatically get turned into links.
-http://www.example.com or <http://www.example.com> and sometimes
-example.com (but not on Github, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
-[1]: http://slashdot.org
-[link text itself]: http://www.reddit.com
-
-
-![Hopper The Rabbit](sky.jpg)
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-
-## Code and Syntax Highlighting
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```
-No language indicated, so no syntax highlighting.
-But let's throw in a <b>tag</b>.
-```
-
-### JSX
-
-```jsx
-import React from "react";
-import { ThemeProvider } from "theme-ui";
-import theme from "./theme";
-
-export default props => (
-  <ThemeProvider theme={theme}>{props.children}</ThemeProvider>
-);
-```
-
-## Blockquotes
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.
-
-> Blockquotes are very handy in email to emulate reply text.
-> This line is part of the same quote.
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-
-## Horizontal Rule
-
-Horizontal Rule
-
-Three or more...
+&nbsp;
+##### **Create a master branch**
 
 ---
+&nbsp;
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
 
----
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+### Deploy a Gatsby Site into your repository
+&nbsp;
+
+```shell
+Git init
+```
+
+```shell
+Git add README.md 
+Git commit -m “first commit”
+```
+
+```shell
+git remote add origin https://github.com/jasonoh1226/jasonoh1226.github.io.git
+```
+
+This command creates dev branch
+```shell
+git checkout -b dev master
+```
+
+```shell
+git add . && git commit -m “message”
+```
+
+
+```shell
+git push -u orgin dev
+```

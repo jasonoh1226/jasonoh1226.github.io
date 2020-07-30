@@ -7,13 +7,19 @@ import {Row, Col} from 'reactstrap'
 import PostGrid from '../components/post-grid'
 import LeftSidebar from '../components/left-sidebar'
 import RightSidebar from '../components/right-sidebar'
+import PaginationLinks from '../components/pagination-links'
+
 
 const IndexPage = () => {
 
   const data = useStaticQuery(
     graphql`
         query {
-          allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
+          allMarkdownRemark(
+            sort: {fields: [frontmatter___date], order: DESC}
+            limit: 2
+            ) {
+            totalCount
             edges {
               node {
                 id
@@ -46,6 +52,9 @@ const IndexPage = () => {
 
   //console.log(data)
 
+  const postsPerPage = 2;
+  let numberOfPages = Math.ceil(data.allMarkdownRemark.totalCount / postsPerPage);
+
   return (
     <Layout>
       <SEO title="Home" />   
@@ -70,6 +79,7 @@ const IndexPage = () => {
                 </div>
               )
             })}
+            <PaginationLinks _currentPage={1} _numberOfPages={numberOfPages}/>
           </section>
         </Col>
         <Col lg={{size: 3, order: 1}}>

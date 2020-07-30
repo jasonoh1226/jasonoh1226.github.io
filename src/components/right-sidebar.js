@@ -57,13 +57,14 @@ const RightSidebar = () => {
                            <Link to={`/${edge.node.fields.slug}`}>
                             <Row>
                               
-                                <Col xs="6">
+                                <Col xs="4">
+                                
                                   <figure>
                                     <Img  fixed={edge.node.frontmatter.featuredImage.childImageSharp.fixed} />
                                   </figure>
                                     
                                 </Col>
-                                <Col xs="6">
+                                <Col xs="8">
                                         <div className="recent-posts-date">
                                           {edge.node.frontmatter.date}
                                         </div>
