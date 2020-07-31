@@ -43,7 +43,7 @@ const postList = ({data, pageContext}) => {
                 </div>
               )
             })}
-            <PaginationLinks _currentPage={currentPage} _numberOfPages={numberOfPages}/>
+            <PaginationLinks currentPage={currentPage} numberOfPages={numberOfPages}/>
           </section>
         </Col>
         <Col lg={{size: 3, order: 1}}>

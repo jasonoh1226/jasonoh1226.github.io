@@ -79,7 +79,7 @@ const IndexPage = () => {
                 </div>
               )
             })}
-            <PaginationLinks _currentPage={1} _numberOfPages={numberOfPages}/>
+            <PaginationLinks currentPage={1} numberOfPages={numberOfPages}/>
           </section>
         </Col>
         <Col lg={{size: 3, order: 1}}>

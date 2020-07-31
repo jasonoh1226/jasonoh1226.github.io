@@ -288,7 +288,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const postsPerPage = 2
     const numberOfPages = Math.ceil(posts.length / postsPerPage)
 
-    console.log (`gatsby-node ${posts.length}` )
+    //console.log (`gatsby-node ${posts.length}` )
 
     Array.from({ length: numberOfPages }).forEach((_, index) => {
       const isFristPage = index === 0
@@ -297,7 +297,7 @@ exports.createPages = async ({ graphql, actions }) => {
       // if it is the first page, do not need to create a page because it already exist
       if (isFristPage) return
 
-      console.log(`@@@@@@@@@ ${postsPerPage} ${currentPage}`)
+      //console.log(`@@@@@@@@@ ${postsPerPage} ${currentPage}`)
       // if it is not the first page, create a page
       createPage({
         path: `/page/${currentPage}`,
