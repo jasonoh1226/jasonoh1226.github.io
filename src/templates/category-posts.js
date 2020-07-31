@@ -20,10 +20,8 @@ const CategoryPosts = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title={`Category | ${category}`} />
-      <Row>
-        
+      <Row>        
         <Col lg={{size: 6, order: 6}}>
-
           <section>
             <h4 id="page-header">{pageHeader}</h4>
             {data.allMarkdownRemark.edges.map((edge, index) => {

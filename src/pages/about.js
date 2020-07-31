@@ -38,8 +38,7 @@ const AboutPage = () => {
                 <p>I can quickly and efficiently join your team using continuous-integration methods
                     and tools such as Git and Agile.
                 </p>
-                <p>If you'd like to find out more about how I work and my process of working with clients,
-                    please <a href="/" style={{textDecoration: 'underline', color: 'purple'}}>get in touch</a> !
+                <p>If you'd like to find out more about how I work please <a href="mailto:jasonoh1226@gmail.com" style={{textDecoration: 'underline', color: 'purple'}}>get in touch</a> !
                 </p>
 
                 <div className="author-social-links">
