@@ -69,6 +69,7 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-smoothscroll`,
     // `gatsby-transformer-remark`,
     // {
     //   resolve: `gatsby-transformer-remark`,

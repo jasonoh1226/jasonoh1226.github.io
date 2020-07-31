@@ -2,7 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {graphql} from 'gatsby'
-import {Row, Col} from 'reactstrap'
+import {Row, Col, Button} from 'reactstrap'
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 import PostGrid from '../components/post-grid'
 import LeftSidebar from "../components/left-sidebar"
@@ -11,8 +12,8 @@ import RightSidebar from "../components/right-sidebar"
 const TagPosts = ({data, pageContext}) => {
 
     const {tag} = pageContext
-    // const {totalCount} = data.allMarkdownRemark
-    // const pageHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
+    const {totalCount} = data.allMarkdownRemark
+    const pageHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
 
     return (
         <Layout>
@@ -20,6 +21,7 @@ const TagPosts = ({data, pageContext}) => {
         <Row>
           <Col lg={{size: 6, order: 6}}>
           <section>
+            <h4 id="page-header">{pageHeader}</h4>
             {data.allMarkdownRemark.edges.map((edge, index) => {
               return (
                 <div key={index}>
@@ -37,6 +39,9 @@ const TagPosts = ({data, pageContext}) => {
                 </div>
               )
             })}
+            <div className="scroll-to">
+              <Button color="link" onClick={() => scrollTo('#page-header')}>Back to top</Button>
+            </div>
           </section>
           </Col>
           <Col lg={{size: 3, order: 1}}>
