@@ -9,7 +9,7 @@ import LeftSidebar from '../components/left-sidebar'
 import RightSidebar from '../components/right-sidebar'
 import PaginationLinks from '../components/pagination-links'
 
-const postList = ({data, pageContext}) => {
+const AllPostsList = ({data, pageContext}) => {
 
   //console.log(data)
 
@@ -92,4 +92,4 @@ export const postListQuery = graphql`
 `
 
 
-export default postList
+export default AllPostsList

@@ -141,7 +141,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const tagPostsTemplate = path.resolve("./src/templates/tag-posts.js")
   const categoriesPageTemplate = path.resolve("./src/templates/categories-page.js")
   const categoryPostsTemplate = path.resolve("./src/templates/category-posts.js")
-  const postListTemplate = path.resolve("./src/templates/post-list.js")
+  const allPostsListTemplate = path.resolve("./src/templates/all-posts-list.js")
 
   // 2. Get markdwon data
   // Query for markdown nodes to use in creating pages.
@@ -301,7 +301,7 @@ exports.createPages = async ({ graphql, actions }) => {
       // if it is not the first page, create a page
       createPage({
         path: `/page/${currentPage}`,
-        component: postListTemplate,
+        component: allPostsListTemplate,
         context: {
           limit: postsPerPage,
           skip: index * postsPerPage,
