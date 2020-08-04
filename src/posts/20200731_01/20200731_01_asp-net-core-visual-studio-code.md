@@ -4,7 +4,7 @@ author: Jason Oh
 date: 2020-07-31 13:37:00
 featuredImgUrl: https://images.unsplash.com/photo-1560237731-890b122a9b6c
 featuredImgAlt: Mountains with a starry sky
-featuredImage: 20200729_01_github-gatsby.png
+featuredImage: 20200731_01_vs2vscode.png
 categories: 
 - Programming
 - Framework
@@ -24,32 +24,44 @@ In this post, we will look at how you can get started with Asp.Net Core, build a
 
 ### Setting Up Environment ###
 
+Install .net Core 3.1 SDK from [https://dotnet.microsoft.com](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+
+Install Visual Studio Cdoe from [https://code.visualstudio.com](https://code.visualstudio.com/download)
+
+
 &nbsp;
-
-Install .net Core 3.1 SDK from this website
-
-download from [https://dotnet.microsoft.com](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-
 
 ### Creating a new project ###
-
-&nbsp;
 
 ```shell
 dotnet new -l
 ```
 
-This creates the Asp.Net Core WebApplication(MVC)
+To create an Asp.Net Core WebApplication(MVC)
 ```shell
-dotnet new mvc
+dotnet new mvc -n yourProjectName
 ```
 
-### Installing extensions ###
-Open a new project in Visual Studio Code
+To create an Asp.Net Core Web API
+```shell
+dotnet new webapi -n yourProjectName
+```
+
+&nbsp;
+
+
+### Setting Up VS CODE for C# Development ###
+Open a project in Visual Studio Code
+
 Install several extensions that you might need for the project
-&nbsp;C# / C# Extensions / C# FixFormat / C# XML Document
-&nbsp;.NET Core Extension / .NET Core Tools
-&nbsp;NuGet Package Manager
+
+&nbsp; - C# / C# Extensions / C# FixFormat / C# XML Document
+
+&nbsp; - .NET Core Extension / .NET Core Tools
+
+&nbsp; - NuGet Package Manager
+
+&nbsp;
 
 
 ### Testing the first app ###
@@ -64,6 +76,54 @@ dotnet run
 &nbsp;
 
 
+### Add Nuget Package Manager ###
+
+This is to use DbContext
+
+Open a command line in VS CODE
+
+=> Command + Shift + p
+
+=> Nuget Package Manager: Add Package
+
+```shell
+Microsoft.EntityFrameworkCore
+```
+
+```shell
+Microsoft.EntityFrameworkCore.Sqlite
+```
+
+```shell
+Microsoft.EntityFrameworkCore.Design
+```
+
+&nbsp;
+
+### Install DotNet Entity Framework Tools ###
+
+```shell
+dotnet tool install --global dotnet-ef
+```
+
+To see commands
+```shell
+dotnet ef -h
+```
+
+[https://stackoverflow.com/questions/57066856/dotnet-ef-not-found-in-net-core-3](https://stackoverflow.com/questions/57066856/dotnet-ef-not-found-in-net-core-3)
+
+[https://stackoverflow.com/questions/41536603/visual-studio-code-entity-framework-core-add-migration-not-recognized](https://stackoverflow.com/questions/41536603/visual-studio-code-entity-framework-core-add-migration-not-recognized)
+
+```shell
+dotnet ef migrations add first
+```
+
+```shell
+dotnet ef database update
+```
+
+&nbsp;
 
 ### Running MySql for the Asp.Net Core ###
 
@@ -77,21 +137,17 @@ npm i Pomelo.EntityFrameworkCore.MySql
 ```shell
 npm i Microsoft.EntityFrameworkCore.Tools.DotNet
 ```
-```shell
-Microsoft.EntityFrameworkCore.Design
-```
+
 
 &nbsp;
 
 
 ### Adding the Package Manager Console ###
 
-&nbsp;dotnet tool install --global dotnet-ef
-[https://stackoverflow.com/questions/57066856/dotnet-ef-not-found-in-net-core-3](https://stackoverflow.com/questions/57066856/dotnet-ef-not-found-in-net-core-3)
-[https://stackoverflow.com/questions/41536603/visual-studio-code-entity-framework-core-add-migration-not-recognized](https://stackoverflow.com/questions/41536603/visual-studio-code-entity-framework-core-add-migration-not-recognized)
 
-&nbsp;dotnet ef migrations add first
-&nbsp;dotnet ef database update
+
+
+
 
 
 ### Issue ###

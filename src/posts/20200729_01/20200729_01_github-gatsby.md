@@ -107,3 +107,11 @@ git add . && git commit -m “message”
 ```shell
 git push -u orgin dev
 ```
+
+
+### Add the Custom Domain to your GitHub page
+
+&nbsp;
+
+
+https://medium.com/@jacky_ttt/day063-how-to-deploy-to-github-pages-7bf6a26452b2
