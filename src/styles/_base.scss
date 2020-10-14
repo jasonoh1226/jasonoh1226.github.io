@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -10,6 +11,11 @@
 
 .container#content {
   margin-top: 90px;
+=======
+.container#content {
+  margin-top: 90px;
+  min-height: 100vh;
+>>>>>>> “message”
 }
 body {
   background-color: $background;

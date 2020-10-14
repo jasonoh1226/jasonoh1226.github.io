@@ -63,6 +63,19 @@ const Author = () => {
                   <i className="fab fa-linkedin fa-2x"></i>
                 </a>
               </li>
+<<<<<<< HEAD
+=======
+              <li>
+                <a
+                  href={authorQuery.site.siteMetadata.email}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="linkedin"
+                >
+                  <i className="fab fa-linkedin fa-2x"></i>
+                </a>
+              </li>
+>>>>>>> “message”
             </ul>
           </div>
         </CardBody>

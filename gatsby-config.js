@@ -7,6 +7,10 @@ module.exports = {
     github: `https://github.com/jasonoh1226`,
     linkedin: `https://www.linkedin.com/in/jason-junyoung-oh-6183b429/`,
     siteUrl: `https://jasonoh1226.github.io/`,
+<<<<<<< HEAD
+=======
+    email: `mailto:jasonoh1226@gmail.com`
+>>>>>>> “message”
   },
   plugins: [
     `gatsby-plugin-sharp`,
@@ -53,6 +57,16 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
+<<<<<<< HEAD
+=======
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `projects`,
+        path: `${__dirname}/src/projects`,
+      },
+    },
+>>>>>>> “message”
    
 
     {

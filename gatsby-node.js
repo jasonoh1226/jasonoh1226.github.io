@@ -185,6 +185,10 @@ exports.createPages = async ({ graphql, actions }) => {
           slug: edge.node.fields.slug,
         },
       })
+<<<<<<< HEAD
+=======
+      console.log(edge.node.fields.slug);
+>>>>>>> “message”
     })
 
     // 4.1 Create tags page
