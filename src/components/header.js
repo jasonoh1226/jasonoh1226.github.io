@@ -20,33 +20,6 @@ const Header = ({ siteTitle }) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-<<<<<<< HEAD
-    <div className="header-container">
-      <Navbar fixed="top" light expand="sm" className="navbar">
-        <span>
-          <LogoImage/>
-        </span> 
-        <NavbarBrand href="/" className="navbar-brand">{siteTitle}</NavbarBrand>  
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto nav" navbar>
-            <NavItem>
-              <NavLink href="/" >Home</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/categories">Categories</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/tags/">Tags</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/about/">About</NavLink>
-            </NavItem>          
-          </Nav>        
-        </Collapse>
-      </Navbar>
-    </div>
-=======
       <Navbar fixed="top" light expand="sm">
         <div className="container">
           <span>
@@ -72,7 +45,6 @@ const Header = ({ siteTitle }) => {
           </Collapse>
         </div>  
       </Navbar>
->>>>>>> “message”
   );
  
 }
