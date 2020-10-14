@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{"3XHS":function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),r=n("Bl7J"),u=n("vrFN");t.default=function(){return l.a.createElement(r.a,null,l.a.createElement(u.a,{title:"About"}),l.a.createElement("div",null,l.a.createElement("h1",null,"About Me"),l.a.createElement("p",null,"I curretely work as an Asp.Net developer for Buckland.")))}}}]);
-//# sourceMappingURL=component---src-pages-about-js-890e51f5ee13db4311c2.js.map
