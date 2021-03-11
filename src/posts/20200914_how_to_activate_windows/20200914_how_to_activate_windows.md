@@ -4,7 +4,7 @@ author: Jason Oh
 date: 2020-09-14 11:00:00
 featuredImgUrl: https://images.unsplash.com/photo-1560237731-890b122a9b6c
 featuredImgAlt: Mountains with a starry sky
-featuredImage: 20200729_01_github-gatsby.png
+featuredImage: 20200914_windows10.jpg
 categories: 
 - Installation
 tags:

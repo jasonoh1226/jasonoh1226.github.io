@@ -4,7 +4,7 @@ author: Jason Oh
 date: 2020-09-13 13:37:00
 featuredImgUrl: https://images.unsplash.com/photo-1560237731-890b122a9b6c
 featuredImgAlt: Mountains with a starry sky
-featuredImage: 20200806_angular-cli.png
+featuredImage: 20200913_android_dev.jpg
 categories: 
 - Programming
 - Android
