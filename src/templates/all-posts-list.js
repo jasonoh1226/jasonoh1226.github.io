@@ -24,7 +24,7 @@ const AllPostsList = ({data, pageContext}) => {
       <SEO title="Home" />   
       <Row>
         <Col lg={{size: 6, order: 6}}>
-          <h3>{`Page: ${currentPage}`}</h3>
+          {/* <h3>{`Page: ${currentPage}`}</h3> */}
           <section>
             {data.allMarkdownRemark.edges.map((edge, index) => {
               return (
