@@ -3,7 +3,7 @@ module.exports = {
     title: `Jason Oh`,
     description: `Share knowledges and ideas`,
     author: `Jason Oh`,
-    bio: `Full Stack Developer`,
+    bio: `Product Developer at Carfax`,
     github: `https://github.com/jasonoh1226`,
     linkedin: `https://www.linkedin.com/in/jason-junyoung-oh-6183b429/`,
     siteUrl: `https://jasonoh1226.github.io/`,
